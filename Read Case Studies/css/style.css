@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins_Regular";
+    src: url("../Font/Poppins-Regular.ttf") format("truetype");
+}
+
+
+body {
+    font-family: "Poppins_Regular";
+    max-width: 1600px;
+    min-height: 4082px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+.header_nav{
+    display: flex;
+    background-color: #1A237E;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    align-items: center;
+}
+
+.list_nav{
+    display: flex;
+    gap: 2rem;
+    margin-right: 120px;
+}
+
+.logo_nav{
+    margin-left: 120px;
+}
+
+.contact {
+    font-weight: bold;
+    font-size: large;
+    padding: 15px 45px;
+    border: 2px solid #475569;
+    border-radius: 28px;
+}
+
+.privacy_footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.down_footer {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    padding: 25px;
+    align-items: center;
+}
+
+.up_footer {
+    width: 100%;
+    height: 20rem;
+    background-color: #1A237E;
+    position: relative;
+}
+
+.down_footer a {
+    color: black;
+}
+
+.email {
+    width: 26rem;
+    height: 5rem;
+    background-color: #FDE68A;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 10rem;
+}
+
+.page_title{
+    color: #fff;
+    position: absolute;
+    left: 10rem;
+    top: 5rem;
+}
+
+.page_title p {
+    font-weight: lighter;
+    padding-top: 1rem;
+}
+
+.page_title h2 {
+    font-size: 31px;
+}
+
+.lets_talk {
+    color: #fff;
+    position: absolute;
+    right: 15rem;
+    top: 5rem;
+}
+
+.logos svg {
+    color: #fff;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.lets_talk h2 {
+    font-size: 44px;
+    padding-bottom: 1rem;
+}
+
+.readCase_body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title_body {
+    margin-top: 90px;
+}
+
+.title_body p {
+    margin-top: 20px;
+}
+
+.title_body h1 {
+    margin-top: 20px;
+}
+
+.gradi {
+    display: flex;
+    margin-top: 50px;
+    max-width: 1064px;
+    height: 641px;
+    padding: 60px 88px 65px 88px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: linear-gradient(131deg, #F4EDE1 16.74%, #98B1C6 103.17%);
+}
+
+.img_in_grad {
+    max-width: 888px;
+    height: 516px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), lightgray 1.512px 4.653px / 99.867% 114.704% no-repeat;
+}
+
+.down_grad {
+    margin-top: 50px;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1064px;
+    height: 40px;
+}
+
+.description {
+    margin: 80px auto;
+    width: 70%;
+    
+}
+
+.description h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.body_list li {
+    list-style-type: disc;
+}
+
+.body_list ul {
+    margin-left: 20px;
+}
+
+.second_grad {
+    display: flex;
+    margin: 0 auto;
+    max-width: 840px;
+    height: 508px;
+    padding: 42px 55px 43px 57px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: linear-gradient(131deg, #F4EDE1 16.74%, #98B1C6 103.17%);
+}
+
+.second_grad_img {
+    max-width: 728px;
+    height: 423px;
+    flex-shrink: 0;
+}
+
+.flex_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.flex_list h2 {
+    color: #4338CA;
+}
+
+.upper_footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.upper_footer p {
+    margin-top: 20px;
+}
+
+.upper_footer input[type="submit"] {
+    margin-top: 40px;
+    color: black;
+    background-color: #EAB308;
+    padding: 20px;
+    border-radius: 30px;
+    width: 220px;
+    height: 55px;
+    font-size: 16px;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        height: 2200px;
+    }
+    .privacy_body {
+        font-size: smaller;
+    }
+    .logos svg {
+        width: 4px;
+        margin-right: 5px;
+    }
+    .title_header {
+        left: 6px;
+    }
+    .header_nav {
+        padding: 10px;
+    }
+    .logo_nav {
+        margin-left: 20px;
+    }
+    .list_nav a {
+        font-size: 8px;
+    }
+    .email {
+        display: none;
+    }
+    .page_title h2 {
+        font-size: 18px;
+    }
+    .page_title {
+        width: 82px;
+    }
+    .lets_talk h2 {
+        font-size: 21px;
+    }
+    .logo_nav {
+        font-size: 3px;
+    } 
+    .center_title h1 {
+        font-size: 29px;
+    }
+    .center_title h2 {
+        font-size: 3px;
+    }
+    .img_in_grad {
+        width: 600px;
+    }
+    .img_in_grad img {
+        width: 100px;
+    }
+    .flex_list h2 {
+        font-size: 10px;
+    }
+    .flex_list h3 {
+        font-size: 3px;
+    }
+    .upper_footer {
+        font-size: 8px;
+    }
+    .description {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .description {
+        font-size: 12px;
+    }
+    .upper_footer {
+        font-size: 12px;
+    }
+    .flex_list h2 {
+        font-size: 18px;
+    }
+    .flex_list h3 {
+        font-size: 12px;
+    }
+    .down_grad p {
+        font-size: 12px;
+    }
+    .down_grad h3 {
+        font-size: 12px;
+    }
+    .img_in_grad img {
+        width: 700px;
+    }
+    .logos svg {
+        width: 6px;
+        margin-right: 10px;
+    }
+    .privacy_body {
+        font-size: small;
+    }
+    .title_header {
+        left: 12px;
+    }
+    .header_nav {
+        font-size: smaller;
+        padding: 18px;
+    }
+    .logo_nav {
+        margin-left: 60px;
+    }
+    .contact {
+        padding: 10px 10px;
+    }
+    .list_nav {
+        margin-right: 60px;
+        gap: 1rem;
+    }
+    .lets_talk {
+        right: 5rem;
+    }
+    .up_footer {
+        font-size: smaller;
+    }
+    .email {
+        width: 100px;
+        left: 2rem;
+    }
+    .email th {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .title_header {
+        font-size: small;
+    }
+    .list_nav {
+        font-size: small;
+    }
+    .contact {
+        font-size: small;
+        border: none;
+        padding: 0;
+    }
+    .privacy_footer {
+        font-size: small;
+    }
+    .logos svg {
+        width: 12px;
+    }
+    .email th {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .email {
+        width: 20rem;
+        left: 5rem;
+    }
+    .page_title {
+        left: 5rem;
+    }
+}
+

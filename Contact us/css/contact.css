@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins_Regular";
+    src: url("../Font/Poppins-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: "Poppins_Regular";
+    max-width: 1600px;
+    height: 1677px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+.header_nav{
+    display: flex;
+    background-color: #1A237E;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    align-items: center;
+}
+
+.list_nav{
+    display: flex;
+    gap: 2rem;
+    margin-right: 120px;
+}
+
+.logo_nav{
+    margin-left: 120px;
+}
+
+.contact {
+    font-weight: bold;
+    font-size: large;
+    padding: 15px 45px;
+    border: 2px solid #475569;
+    border-radius: 28px;
+}
+
+.privacy_footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.down_footer {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    padding: 25px;
+    align-items: center;
+}
+
+.up_footer {
+    width: 100%;
+    height: 20rem;
+    background-color: #1A237E;
+    position: relative;
+}
+
+.down_footer a {
+    color: black;
+}
+
+.email {
+    width: 26rem;
+    height: 5rem;
+    background-color: #FDE68A;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 10rem;
+}
+
+.page_title{
+    color: #fff;
+    position: absolute;
+    left: 10rem;
+    top: 5rem;
+}
+
+.page_title p {
+    font-weight: lighter;
+    padding-top: 1rem;
+}
+
+.page_title h2 {
+    font-size: 31px;
+}
+
+.lets_talk {
+    color: #fff;
+    position: absolute;
+    right: 15rem;
+    top: 5rem;
+}
+
+.lets_talk h2 {
+    font-size: 44px;
+    padding-bottom: 1rem;
+}
+
+.center_title {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.center_title h1 {
+    font-size: 39px;
+}
+
+.center_page {
+    margin: 0px auto;
+    width: 55%;
+}
+
+.center_page h2 {
+    font-size: 30px;
+}
+
+.body_list {
+    width: 55%;
+    margin: 0px auto;
+}
+
+.body_list li {
+    list-style-type: disc;
+}
+
+.body_list ul {
+    margin-left: 20px;
+}
+
+.logos svg {
+    color: #fff;
+    width: 25px;
+    margin-right: 20px;
+
+}
+
+.inputs {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    height: 590px;
+    background-color: #F1F5F9;
+    border-radius: 20px;
+}
+
+.inputs label {
+    font-weight: bold;
+}
+
+.inputs input[type="text"] {
+    padding: 16px;
+    outline-color: #475569;
+    border: 2px solid #CBD5E1;
+    background-color: #F1F5F9;
+    border-radius: 7px;
+    width: 340px;
+    
+}
+
+.inputs select {
+    padding: 14px;
+    font-family: "Poppins_Regular";
+    border-radius: 7px;
+    border: 2px solid #CBD5E1;
+    background-color: #F1F5F9;
+    width: 340px;
+    height: 55px;
+}
+
+.inputs input[type="submit"] {
+    margin-top: 20px;
+    color: #fff;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    width: 220px;
+    height: 55px;
+    font-size: 16px;
+}
+
+.inputs textarea {
+    font-family: "Poppins_Regular";
+    padding: 12px;
+    border-radius: 7px;
+    border: 2px solid #CBD5E1;
+    background-color: #F1F5F9;
+}
+
+.label_name {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+.input_name {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+
+.label_sub1 {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+}
+
+.sub1 {
+    position: absolute;
+    top: 180px;
+    left: 70px;
+}
+
+.label_email {
+    position: absolute;
+    top: 50px;
+    right: 355px;
+}
+
+.input_email {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+}
+
+.label_sub2 {
+    position: absolute;
+    top: 150px;
+    right: 340px;
+}
+
+.sub2 {
+    position: absolute;
+    top: 180px;
+    right: 60px;
+}
+
+.label_message {
+    position: absolute;
+    top: 250px;
+    left: 70px;
+}
+
+.textarea_input {
+    position: absolute;
+    top: 280px;
+    left: 70px;
+}
+
+.sub_message {
+    position: absolute;
+    bottom: 80px;
+    left: 70px;
+}
+
+
+@media (max-width: 768px) {
+    .label_sub2 {
+        position: absolute;
+        top: 150px;
+        right: 250px;
+    }
+    .label_email {
+        position: absolute;
+        right: 255px;
+    }
+    .inputs {
+        width: 380px;
+        padding: 0;
+    }
+    .inputs textarea {
+        width: 560px;
+    }
+    .inputs input[type="text"] {
+        width: 240px;
+    }
+    .inputs select {
+        width: 240px;
+    }
+    .privacy_body {
+        font-size: smaller;
+    }
+    .logos svg {
+        width: 4px;
+        margin-right: 5px;
+    }
+    .title_header {
+        left: 6px;
+    }
+    .header_nav {
+        padding: 10px;
+    }
+    .logo_nav {
+        margin-left: 20px;
+    }
+    .list_nav a {
+        font-size: 8px;
+    }
+    .email {
+        display: none;
+    }
+    .page_title h2 {
+        font-size: 18px;
+    }
+    .page_title {
+        width: 82px;
+    }
+    .lets_talk h2 {
+        font-size: 21px;
+    }
+    .logo_nav {
+        font-size: 3px;
+    } 
+    .center_title h1 {
+        font-size: 29px;
+    }
+    .center_title h2 {
+        font-size: 3px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .label_sub2 {
+        position: absolute;
+        top: 150px;
+        right: 290px;
+    }
+    .label_email {
+        position: absolute;
+        right: 295px;
+    }
+    .inputs {
+        width: 760px;
+    }
+    .inputs textarea {
+        width: 600px;
+    }
+    .inputs input[type="text"] {
+        width: 280px;
+    }
+    .inputs select {
+        width: 280px;
+    }
+    .center_title h1 {
+        font-size: 23px;
+    }
+    .center_title p {
+        font-size: 12px;
+    }
+    .logos svg {
+        width: 6px;
+        margin-right: 10px;
+    }
+    .privacy_body {
+        font-size: small;
+    }
+    .title_header {
+        left: 12px;
+    }
+    .header_nav {
+        font-size: smaller;
+        padding: 18px;
+    }
+    .logo_nav {
+        margin-left: 60px;
+    }
+    .contact {
+        padding: 10px 10px;
+    }
+    .list_nav {
+        margin-right: 60px;
+        gap: 1rem;
+    }
+    .lets_talk {
+        right: 5rem;
+    }
+    .up_footer {
+        font-size: smaller;
+    }
+    .email {
+        width: 100px;
+        left: 2rem;
+    }
+    .email th {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .title_header {
+        font-size: small;
+    }
+    .list_nav {
+        font-size: small;
+    }
+    .contact {
+        font-size: small;
+        border: none;
+        padding: 0;
+    }
+    .privacy_footer {
+        font-size: small;
+    }
+    .logos svg {
+        width: 12px;
+    }
+    .email th {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .email {
+        width: 20rem;
+        left: 5rem;
+    }
+    .page_title {
+        left: 5rem;
+    }
+}

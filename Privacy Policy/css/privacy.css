@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins_Regular";
+    src: url("../Font/Poppins-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: "Poppins_Regular";
+    width: 100%;
+    height: 1929px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+.header_nav{
+    display: flex;
+    background-color: #1A237E;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    align-items: center;
+}
+
+.list_nav{
+    display: flex;
+    gap: 2rem;
+    margin-right: 120px;
+}
+
+.logo_nav{
+    margin-left: 120px;
+}
+
+.contact {
+    font-weight: bold;
+    font-size: large;
+    padding: 15px 45px;
+    border: 2px solid #475569;
+    border-radius: 28px;
+}
+
+.privacy_footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.down_footer {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    padding: 25px;
+    align-items: center;
+}
+
+.up_footer {
+    width: 100%;
+    height: 20rem;
+    background-color: #1A237E;
+    position: relative;
+}
+
+.down_footer a {
+    color: black;
+}
+
+.email {
+    width: 26rem;
+    height: 5rem;
+    background-color: #FDE68A;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 10rem;
+}
+
+.page_title{
+    color: #fff;
+    position: absolute;
+    left: 10rem;
+    top: 5rem;
+}
+
+.page_title p {
+    font-weight: lighter;
+    padding-top: 1rem;
+}
+
+.page_title h2 {
+    font-size: 31px;
+}
+
+.lets_talk {
+    color: #fff;
+    position: absolute;
+    right: 15rem;
+    top: 5rem;
+}
+
+.lets_talk h2 {
+    font-size: 44px;
+    padding-bottom: 1rem;
+}
+
+.center_title {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.center_title h1 {
+    font-size: 39px;
+}
+
+.center_page {
+    margin: 0px auto;
+    width: 55%;
+}
+
+.center_page h2 {
+    font-size: 30px;
+}
+
+.body_list {
+    width: 55%;
+    margin: 0px auto;
+}
+
+.body_list li {
+    list-style-type: disc;
+}
+
+.body_list ul {
+    margin-left: 20px;
+}
+
+.logos svg {
+    color: #fff;
+    width: 25px;
+    margin-right: 20px;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 2200px;
+    }
+    .privacy_body {
+        font-size: smaller;
+    }
+    .logos svg {
+        width: 4px;
+        margin-right: 5px;
+    }
+    .title_header {
+        left: 6px;
+    }
+    .header_nav {
+        padding: 10px;
+    }
+    .logo_nav {
+        margin-left: 20px;
+    }
+    .list_nav a {
+        font-size: 8px;
+    }
+    .email {
+        display: none;
+    }
+    .page_title h2 {
+        font-size: 18px;
+    }
+    .page_title {
+        width: 82px;
+    }
+    .lets_talk h2 {
+        font-size: 21px;
+    }
+    .logo_nav {
+        font-size: 3px;
+    } 
+    .center_title h1 {
+        font-size: 29px;
+    }
+    .center_title h2 {
+        font-size: 3px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logos svg {
+        width: 6px;
+        margin-right: 10px;
+    }
+    .privacy_body {
+        font-size: small;
+    }
+    .title_header {
+        left: 12px;
+    }
+    .header_nav {
+        font-size: smaller;
+        padding: 18px;
+    }
+    .logo_nav {
+        margin-left: 60px;
+    }
+    .contact {
+        padding: 10px 10px;
+    }
+    .list_nav {
+        margin-right: 60px;
+        gap: 1rem;
+    }
+    .lets_talk {
+        right: 5rem;
+    }
+    .up_footer {
+        font-size: smaller;
+    }
+    .email {
+        width: 100px;
+        left: 2rem;
+    }
+    .email th {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .title_header {
+        font-size: small;
+    }
+    .list_nav {
+        font-size: small;
+    }
+    .contact {
+        font-size: small;
+        border: none;
+        padding: 0;
+    }
+    .privacy_footer {
+        font-size: small;
+    }
+    .logos svg {
+        width: 12px;
+    }
+    .email th {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .email {
+        width: 20rem;
+        left: 5rem;
+    }
+    .page_title {
+        left: 5rem;
+    }
+}
+
